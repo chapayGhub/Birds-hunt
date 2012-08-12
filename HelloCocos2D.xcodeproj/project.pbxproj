@@ -16,6 +16,7 @@
 		3D9D329815D7F80F00B4E1DF /* bg_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D329615D7F80F00B4E1DF /* bg_front.png */; };
 		3D9D329A15D7F99E00B4E1DF /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D329915D7F99E00B4E1DF /* hit.mp3 */; };
 		3D9D329C15D7FA8600B4E1DF /* feather.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D329B15D7FA8600B4E1DF /* feather.png */; };
+		3D9D329E15D7FE0100B4E1DF /* bird_hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D329D15D7FE0100B4E1DF /* bird_hero.png */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
 		504DFBCF10AF12E9006D82FE /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */; };
 		504DFBD010AF12E9006D82FE /* CLScoreServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBCA10AF12E9006D82FE /* CLScoreServerRequest.h */; };
@@ -270,6 +271,7 @@
 		3D9D329615D7F80F00B4E1DF /* bg_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_front.png; sourceTree = "<group>"; };
 		3D9D329915D7F99E00B4E1DF /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit.mp3; sourceTree = "<group>"; };
 		3D9D329B15D7FA8600B4E1DF /* feather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feather.png; sourceTree = "<group>"; };
+		3D9D329D15D7FE0100B4E1DF /* bird_hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird_hero.png; sourceTree = "<group>"; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
 		504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerPost.m; sourceTree = "<group>"; };
 		504DFBCA10AF12E9006D82FE /* CLScoreServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerRequest.h; sourceTree = "<group>"; };
@@ -666,6 +668,7 @@
 				3D9D329915D7F99E00B4E1DF /* hit.mp3 */,
 				3D9D329B15D7FA8600B4E1DF /* feather.png */,
 				3D9D329515D7F80F00B4E1DF /* bg_back.png */,
+				3D9D329D15D7FE0100B4E1DF /* bird_hero.png */,
 				3D9D329615D7F80F00B4E1DF /* bg_front.png */,
 				3D9D329215D7F55600B4E1DF /* background.png */,
 				130A5F64158CC47300F6B0D7 /* bubble.png */,
@@ -1128,6 +1131,7 @@
 				3D9D329815D7F80F00B4E1DF /* bg_front.png in Resources */,
 				3D9D329A15D7F99E00B4E1DF /* hit.mp3 in Resources */,
 				3D9D329C15D7FA8600B4E1DF /* feather.png in Resources */,
+				3D9D329E15D7FE0100B4E1DF /* bird_hero.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

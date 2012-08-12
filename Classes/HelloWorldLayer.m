@@ -92,7 +92,7 @@
 
     myEmitter = [[CCParticleExplosion alloc] initWithTotalParticles:20];
 
-    myEmitter.texture = [[CCTextureCache sharedTextureCache] addImage:@"explosion.png"];
+    myEmitter.texture = [[CCTextureCache sharedTextureCache] addImage:@"feather.png"];
     myEmitter.position = ccp(x,y);
     
     myEmitter.life =0.5;
@@ -177,10 +177,10 @@
 
 
 - (void) enemies {
-	CCSprite *bug = [CCSprite spriteWithFile:@"feather.png"
+	CCSprite *bug = [CCSprite spriteWithFile:@"bird_hero.png"
 										rect:CGRectMake(0, 0, 150, 150)];
 	
-	float randSize = (float)(arc4random() % 150) + 1; 
+	float randSize = (float)(arc4random() % 130) + 1;
 	
 	[self resizeSprite:bug toWidth:randSize toHeight:randSize];
 	
@@ -209,7 +209,7 @@
 		CCLabelTTF *goLabel = [CCLabelTTF labelWithString:@"" fontName:@"Verdana" fontSize:20.0];
 		goLabel.position = ccp(winSize.width/2, winSize.height/2);
 		goLabel.scale = 0.1;
-		[goLabel setString:[NSString stringWithFormat:@"Parabéns, seu score foi %d",score]];
+		[goLabel setString:[NSString stringWithFormat:@"Your score is %d",score]];
 		[self addChild:goLabel z:10];                
 		[goLabel runAction:[CCScaleTo actionWithDuration:0.5 scale:1.0]];
 		//[self removeChild:goLabel cleanup:YES];
