@@ -45,7 +45,7 @@
 		self.isTouchEnabled = YES;
 		
 		horde = [[NSMutableArray alloc] init];
-		//carrega som
+		//some sounds
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"hit.wav"];
         
         
@@ -64,9 +64,9 @@
 		timerLabel.color = ccc3(0, 0, 0);
 		
         //sprites
-        background = [CCSprite spriteWithFile:@"back.png"];
-        back1 = [CCSprite spriteWithFile:@"bubbles.png"];
-        back2 = [CCSprite spriteWithFile:@"bubbles.png"];
+        background = [CCSprite spriteWithFile:@"background.png"];
+        back1 = [CCSprite spriteWithFile:@"bg_back.png"];
+        back2 = [CCSprite spriteWithFile:@"bg_front.png"];
         background.position = ccp(window_size.width/2,window_size.height/2);
         back1.position = ccp(window_size.width/2,window_size.height/2);
         back2.position = ccp(window_size.width+ back1.position.x,window_size.height/2);
@@ -125,7 +125,7 @@
 
 - (void) checkCollision:(CGPoint) pos{
 	
-	//checar colisao
+	//collision check
 	
 	
 	NSMutableArray *deleted = [[NSMutableArray alloc] init];
@@ -135,7 +135,7 @@
 		if (CGRectIntersectsRect(player_rect, orect)){
             [self createExplosion:obj.position.x y:obj.position.y];
             //toca som
-            [[SimpleAudioEngine sharedEngine] playEffect:@"hit.wav"]; //play a sound
+            [[SimpleAudioEngine sharedEngine] playEffect:@"hit.mp3"]; //play a sound
             [[SimpleAudioEngine sharedEngine] stopEffect:0];
             
 			//score
@@ -177,7 +177,7 @@
 
 
 - (void) enemies {
-	CCSprite *bug = [CCSprite spriteWithFile:@"bubble.png"
+	CCSprite *bug = [CCSprite spriteWithFile:@"feather.png"
 										rect:CGRectMake(0, 0, 150, 150)];
 	
 	float randSize = (float)(arc4random() % 150) + 1; 
